@@ -9,6 +9,8 @@ import UIKit
 
 class NetworkManager {
     
+    static let shared = NetworkManager()
+    
     private let link = "https://dog.ceo/api/breeds/image/random"
     private var randomDog: RandomDog!
     
@@ -20,14 +22,20 @@ class NetworkManager {
                 print(error?.localizedDescription ?? "Empty error description")
                 return
             }
-            
-            do {
-                self.randomDog = try JSONDecoder().decode(RandomDog.self, from: data)
-                
-            } catch let error {
-                print(error.localizedDescription)
-            }
-            print(self.randomDog.message ?? "Error image link")
+            self.parsingJSON(from: data)
         }.resume()
+    }
+    
+    private init() {}
+}
+
+extension NetworkManager {
+    private func parsingJSON(from data: Data) {
+        do {
+            self.randomDog = try JSONDecoder().decode(RandomDog.self, from: data)
+            
+        } catch let error {
+            print(error.localizedDescription)
+        }
     }
 }
