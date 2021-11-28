@@ -13,6 +13,8 @@
 		854DB6DE27536B960084555E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 854DB6DC27536B960084555E /* Main.storyboard */; };
 		854DB6E027536B9A0084555E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 854DB6DF27536B9A0084555E /* Assets.xcassets */; };
 		854DB6E327536B9A0084555E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 854DB6E127536B9A0084555E /* LaunchScreen.storyboard */; };
+		854DB6EB2753730D0084555E /* RandomDog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854DB6EA2753730D0084555E /* RandomDog.swift */; };
+		854DB6ED275373DA0084555E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854DB6EC275373DA0084555E /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		854DB6DF27536B9A0084555E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		854DB6E227536B9A0084555E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		854DB6E427536B9A0084555E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		854DB6EA2753730D0084555E /* RandomDog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDog.swift; sourceTree = "<group>"; };
+		854DB6EC275373DA0084555E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		854DB6D527536B960084555E /* ShalginSR_HW_2.10 */ = {
 			isa = PBXGroup;
 			children = (
+				854DB6EC275373DA0084555E /* NetworkManager.swift */,
+				854DB6EA2753730D0084555E /* RandomDog.swift */,
 				854DB6D627536B960084555E /* AppDelegate.swift */,
 				854DB6D827536B960084555E /* SceneDelegate.swift */,
 				854DB6DA27536B960084555E /* ViewController.swift */,
@@ -139,6 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				854DB6DB27536B960084555E /* ViewController.swift in Sources */,
+				854DB6EB2753730D0084555E /* RandomDog.swift in Sources */,
+				854DB6ED275373DA0084555E /* NetworkManager.swift in Sources */,
 				854DB6D727536B960084555E /* AppDelegate.swift in Sources */,
 				854DB6D927536B960084555E /* SceneDelegate.swift in Sources */,
 			);
